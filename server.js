@@ -4,16 +4,19 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const bodyParser = require("body-parser");
 
 // PORT
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-// PARSING
-app.use(bodyParser({extended: true}));
-app.use(bodyParse.json());
+// PARSE
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
-// START
+// ROUTES
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
+
+// LISTEN
 app.listen(PORT, function() {
     console.log("Listening on port " + PORT);
 });
