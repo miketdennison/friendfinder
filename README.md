@@ -37,7 +37,7 @@ No Installation is required.
 
 ## Usage
 1. Visit  the [app website](https://the-ff-app.herokuapp.com/)
-2. Click "Got to Survey"
+2. Click "Go to Survey"
 3. Fill out the answers based on the Super Mario character you are pretending to be
 4. Make sure you include a photo of a the Super Mario character you are pretending to be
 5. Once finished filling out the survey, click submit to see your results
