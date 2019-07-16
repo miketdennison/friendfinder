@@ -1,5 +1,5 @@
 body {
-    background-image: url(/app/public/assets/images/mario-background.jpg);
+    background-image: url("../images/mario-background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
