@@ -61,4 +61,4 @@ Project Link: [https://github.com/miketdennison/friendfinder](https://github.com
 
 <!-- IMAGES -->
 [landing-example]: ./screenshots/landing_static.png
-[survey-example]: ./screenshots/survety_static.png
+[survey-example]: ./screenshots/survey_static.png
