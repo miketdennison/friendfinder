@@ -3,14 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>FriendFinder</title>
+    <title>Super Mario FriendFinder Survey</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/cd37de2b15.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
@@ -20,16 +21,16 @@
         <!-- HEADER -->
         <h2>Survey Questions</h2>
         <hr>
-        <h3><strong>About You</strong></h3>
-        <h4>Name (Required)</h4>
+        <h3><strong>About You (Your Mario Character)</strong></h3>
+        <h4>Mario Unviverse Name (Required)</h4>
         <input type="text" id="name" class="form-control" required>
-        <h4>Link to Photo Image (Required)</h4>
+        <h4>Link to Mario Character Image (Required)</h4>
         <input type="text" id="photo" class="form-control" required>
         <hr>
 
         <!-- QUESTIONS -->
         <h3><strong>Question 1</strong></h3>
-        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <h4>You are sweet and well mannered.</h4>
         <select class="chosen-select" id="q1">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -40,7 +41,7 @@
         </select>
 
         <h3><strong>Question 2</strong></h3>
-        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        <h4>You are aggressive in nature.</h4>
         <select class="chosen-select" id="q2">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -51,7 +52,7 @@
         </select>
 
         <h3><strong>Question 3</strong></h3>
-        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <h4>You occassionally get captured by Bowser.</h4>
         <select class="chosen-select" id="q3">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -62,7 +63,7 @@
         </select>
 
         <h3><strong>Question 4</strong></h3>
-        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <h4>You like hitting your head on bricks.</h4>
         <select class="chosen-select" id="q4">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -73,7 +74,7 @@
         </select>
 
         <h3><strong>Question 5</strong></h3>
-        <h4>People can rarely upset you.</h4>
+        <h4>You are a sentient mushroom.</h4>
         <select class="chosen-select" id="q5">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -84,7 +85,7 @@
         </select>
 
         <h3><strong>Question 6</strong></h3>
-        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+        <h4>You mostly wear green.</h4>
         <select class="chosen-select" id="q6">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -95,7 +96,7 @@
         </select>
 
         <h3><strong>Question 7</strong></h3>
-        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <h4>You are the king of Koopas.</h4>
         <select class="chosen-select" id="q7">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -106,7 +107,7 @@
         </select>
 
         <h3><strong>Question 8</strong></h3>
-        <h4>You rarely get carried away by fantasies and ideas.</h4>
+        <h4>You are a dinosaur-like creature.</h4>
         <select class="chosen-select" id="q8">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -117,8 +118,7 @@
         </select>
 
         <h3><strong>Question 9</strong></h3>
-        <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or
-            not.</h4>
+        <h4>You are evil.</h4>
         <select class="chosen-select" id="q9">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -129,7 +129,7 @@
         </select>
 
         <h3><strong>Question 10</strong></h3>
-        <h4>You feel more energetic after spending time with a group of people.</h4>
+        <h4>You mostly wear yellow.</h4>
         <select class="chosen-select" id="q10">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -141,9 +141,9 @@
 
         <br>
         <br>
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fas fa-flag"
                 aria-hidden="true"></i>
-            Submit</button>
+            Finish</button>
 
         <!-- FOOTER -->
         <hr>
@@ -156,6 +156,7 @@
 
     </div>
 
+    <!-- RESULTS -->
     <div id="results-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -165,7 +166,7 @@
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name"></h2>
-                    <img id="match-img"
+                    <img class="fixed-size" id="match-img"
                         src="#">
                 </div>
                 <div class="modal-footer">
@@ -177,7 +178,7 @@
     </div>
 
     <script type="text/javascript">
-        // Chosen CSS
+        // Setup config for chosen
         var config = {
             ".chosen-select": {},
             ".chosen-select-deselect": {
@@ -193,13 +194,16 @@
                 width: "95%"
             }
         };
-
+        // Use chosen to render buttonsw
         for (var selector in config) {
             $(selector).chosen(config[selector]);
         }
-        $("#submit").on("click", function (event) {
-            event.preventDefault();
 
+        // Listen for submit
+        $("#submit").on("click", function (event) {
+            event.preventDefault(); // Prevent page reload
+
+            // Ensure all values are filled
             function validateForm() {
                 var isValid = true;
                 $(".form-control").each(function () {
@@ -216,6 +220,7 @@
                 });
                 return isValid;
             }
+            // If all values are filled, then get the values and send to server
             if (validateForm()) {
                 var userData = {
                     name: $("#name").val(),
@@ -234,6 +239,7 @@
                     ]
                 };
 
+                // Get response from server to find best match
                 $.post("/api/friends", userData, function (data) {
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
