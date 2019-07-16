@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // STATIC
-app.use(express.static(__dirname + "/public/assets"));
+app.use(express.static("app/public"));
 
 // ROUTES
 require("./app/routing/apiRoutes.js")(app);
